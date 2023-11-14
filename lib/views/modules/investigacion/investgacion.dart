@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:trabajo/views/modules/investigacion/capitulos/capitulo1/cap1.dart';
 import 'package:trabajo/widgets/btn-caps.dart';
 import 'package:trabajo/widgets/header.dart';
 
@@ -23,7 +25,7 @@ class InvestigacionModulo extends StatelessWidget {
             height: screenHeight * 0.88,
               child: ListView(
                   children: [
-                    btncaps(context, 'CAPITULO #1', 'Presetación de Trabajo de Grado',() { }),
+                    btncaps(context, 'CAPITULO #1', 'Presetación de Trabajo de Grado',() => Get.to(()=> Cap1(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
                     btncaps(context, 'CAPITULO #2', 'Bases Teóricas',() { }),
                     SizedBox(height: 20,),
