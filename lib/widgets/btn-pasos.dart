@@ -35,3 +35,34 @@ Widget btnpasos(BuildContext context,String txt,String txt2, VoidCallback onPres
     )
   );
 }
+
+
+Widget btnQuiz(BuildContext context, VoidCallback onPressed){
+  return Container(
+    width: 250,
+    height: 160,
+    child: Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('assets/idea.png', width: 100,)
+          ],
+        ),
+        SizedBox(height: 10),
+        ElevatedButton(
+          onPressed: onPressed,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Evalúa tus Conocimientos', style: TextStyle(
+                fontSize: 20
+              ),)
+            ],
+          ),
+          style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryColor, fixedSize: Size(250,50)),
+        ),
+      ],
+    )
+  );
+}

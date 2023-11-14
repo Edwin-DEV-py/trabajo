@@ -30,6 +30,7 @@ class Cap1 extends StatelessWidget {
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #3', 'Planteamiento del Problema',() { }),
                     SizedBox(height: 20,),
+                    btnQuiz(context, () { })
                   ],
                 ),
               ],
