@@ -24,6 +24,10 @@ class HomePage extends StatelessWidget {
             decoration: BoxDecoration(
               color:Colors.black
             ),
+            child: Image(
+              image: AssetImage('assets/home.jpg'),
+              fit: BoxFit.cover,
+            ),
           )
           ),
 //contenedor del boton
