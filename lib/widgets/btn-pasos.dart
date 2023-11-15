@@ -46,7 +46,7 @@ Widget btnQuiz(BuildContext context, VoidCallback onPressed){
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/idea.png', width: 100,)
+            Image.asset('assets/quizas.png', width: 100,)
           ],
         ),
         SizedBox(height: 10),

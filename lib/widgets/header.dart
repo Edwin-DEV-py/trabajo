@@ -102,3 +102,53 @@ class HeaderContainer2 extends StatelessWidget {
     );
   }
 }
+
+class HeaderContainer3 extends StatelessWidget {
+  final String txt;
+
+  HeaderContainer3({required this.txt});
+
+  @override
+  Widget build(BuildContext context) {
+    double screenHeight = MediaQuery.of(context).size.height;
+
+    return Container(
+      width: double.infinity,
+      height: screenHeight * 0.14,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Padding(
+            padding: EdgeInsets.all(0.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  onPressed: (){
+                    Navigator.pop(context);
+                  }, 
+                  icon: Icon(
+                    Icons.turn_left_outlined,
+                    size: 35,
+                  ),
+                ),
+                Text(
+                  'Paso #$txt',
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+                Icon(
+                  Icons.exit_to_app_outlined,
+                  size: 35,
+                ),
+              ],
+            ),
+          ),
+          Divider(
+            color: Colors.black,
+            thickness: 2,
+          )
+        ],
+      ),
+    );
+  }
+}

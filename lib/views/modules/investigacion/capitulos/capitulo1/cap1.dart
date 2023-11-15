@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:trabajo/views/modules/investigacion/capitulos/capitulo1/pasos/paso1.dart';
 import 'package:trabajo/widgets/btn-pasos.dart';
 import 'package:trabajo/widgets/header.dart';
 
@@ -24,7 +26,7 @@ class Cap1 extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    btnpasos(context, 'PASO #1', 'Selección de Tema','revision.png',() { }),
+                    btnpasos(context, 'PASO #1', 'Selección de Tema','problema.png',() => Get.to(()=> cap1_Paso1(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #2', 'Revisión Bibliográfica','revision.png',() { }),
                     SizedBox(height: 20,),

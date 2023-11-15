@@ -24,7 +24,7 @@ class Cap10 extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    btnpasos(context, 'PASO #13', 'Impacto','reco.png',() { }),
+                    btnpasos(context, 'PASO #13', 'Impacto','diana.png',() { }),
                     SizedBox(height: 20,),
                     btnQuiz(context, () { })
                   ],

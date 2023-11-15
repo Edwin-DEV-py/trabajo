@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   get: ^4.6.6
   shared_preferences: ^2.2.2
+  youtube_player_flutter: ^8.1.2
 
 dev_dependencies:
   flutter_test:
@@ -30,3 +31,12 @@ flutter:
     - assets/plantear.png
     - assets/reco.png
     - assets/revision.png
+    - assets/quizas.png
+    - assets/prioridad.png
+    - assets/limites.png
+    - assets/investigacion.png
+    - assets/diana.png
+    - assets/diagnostico.png
+    - assets/bombilla.png
+    - assets/t.png
+    - assets/problema.png
