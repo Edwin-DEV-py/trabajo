@@ -6,7 +6,7 @@ import 'package:trabajo/widgets/colores.dart';
 Widget btnpasos(BuildContext context,String txt,String txt2, String img, VoidCallback onPressed){
   return Container(
     width: 250,
-    height: 160,
+    height: 170,
     child: Column(
       children: [
         Row(
@@ -15,7 +15,7 @@ Widget btnpasos(BuildContext context,String txt,String txt2, String img, VoidCal
             Image.asset('assets/$img', width: 100,)
           ],
         ),
-        SizedBox(height: 10),
+        SizedBox(height: 5),
         ElevatedButton(
           onPressed: onPressed,
           child: Column(
@@ -29,7 +29,7 @@ Widget btnpasos(BuildContext context,String txt,String txt2, String img, VoidCal
               ), textAlign: TextAlign.center,),
             ],
           ),
-          style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryColor, fixedSize: Size(250,50)),
+          style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryColor, fixedSize: Size(250,60)),
         ),
       ],
     )
@@ -56,7 +56,7 @@ Widget btnQuiz(BuildContext context, VoidCallback onPressed){
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('Evalúa tus Conocimientos', style: TextStyle(
-                fontSize: 20
+                fontSize: 18
               ),)
             ],
           ),
