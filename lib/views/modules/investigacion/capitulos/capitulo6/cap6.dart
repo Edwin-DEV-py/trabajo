@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:trabajo/widgets/btn-pasos.dart';
 import 'package:trabajo/widgets/header.dart';
 
-class Cap1 extends StatelessWidget {
-  const Cap1({super.key});
+class Cap6 extends StatelessWidget {
+  const Cap6({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class Cap1 extends StatelessWidget {
       body: Column(
         children: [
 //contenedor del header
-          HeaderContainer2(txt: '1', txt2: 'Presetación de Trabajo de Grado',),
+          HeaderContainer2(txt: '6', txt2: 'Estructura de la Propuesta de Investigación',),
 //contenedor de los pasos
           Container(
             height: screenHeight*0.86,
@@ -24,11 +24,7 @@ class Cap1 extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    btnpasos(context, 'PASO #1', 'Selección de Tema','revision.png',() { }),
-                    SizedBox(height: 20,),
-                    btnpasos(context, 'PASO #2', 'Revisión Bibliográfica','revision.png',() { }),
-                    SizedBox(height: 20,),
-                    btnpasos(context, 'PASO #3', 'Planteamiento del Problema','plantear.png',() { }),
+                    btnpasos(context, 'PASO #9', 'Estructura','reco.png',() { }),
                     SizedBox(height: 20,),
                     btnQuiz(context, () { })
                   ],

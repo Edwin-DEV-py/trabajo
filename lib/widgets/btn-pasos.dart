@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:trabajo/widgets/colores.dart';
 
-Widget btnpasos(BuildContext context,String txt,String txt2, VoidCallback onPressed){
+Widget btnpasos(BuildContext context,String txt,String txt2, String img, VoidCallback onPressed){
   return Container(
     width: 250,
     height: 160,
@@ -12,7 +12,7 @@ Widget btnpasos(BuildContext context,String txt,String txt2, VoidCallback onPres
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/idea.png', width: 100,)
+            Image.asset('assets/$img', width: 100,)
           ],
         ),
         SizedBox(height: 10),
