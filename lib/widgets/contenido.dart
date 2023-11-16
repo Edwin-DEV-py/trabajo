@@ -10,10 +10,12 @@ Widget Widget_titulo(String txt){
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      Title(color: Colors.black, child: Text(txt, style: TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.bold
-      ),)),
+      Expanded(
+        child: Title(color: Colors.black, child: Text(txt, style: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold
+        ), textAlign: TextAlign.center,)),
+      )
     ],
   );
 }
@@ -67,6 +69,31 @@ Widget Widget_url(String txt, String img, double tamano){
             width: tamano,
           ),
         ),
+      ],
+    );
+}
+
+Widget Widget_url_text(String url){
+
+  _launchURL(String url) async {
+  if (!await launchUrl(Uri.parse(url))) {
+    throw 'No se pudo abrir la URL: $url';
+  }else{
+      await launchUrl(Uri.parse(url));
+    }
+  }
+
+  return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Expanded(
+          child: GestureDetector(
+          onTap: () {
+            _launchURL(url);
+          },
+          child:Text(url, textAlign: TextAlign.center, style: TextStyle(color: Colors.blue),)
+          ),
+        )
       ],
     );
 }

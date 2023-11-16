@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso1.dart';
+import 'package:trabajo/views/modules/investigacion/pasos/paso2.dart';
+import 'package:trabajo/views/modules/investigacion/pasos/paso3.dart';
 import 'package:trabajo/widgets/btn-pasos.dart';
 import 'package:trabajo/widgets/colores.dart';
 import 'package:trabajo/widgets/header.dart';
@@ -39,9 +41,9 @@ class InvestigacionModulo extends StatelessWidget {
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #1', 'Selección de Tema','problema.png',() => Get.to(()=> cap1_Paso1(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
-                    btnpasos(context, 'PASO #2', 'Revisión Bibliográfica','revision.png',() { }),
+                    btnpasos(context, 'PASO #2', 'Revisión Bibliográfica','revision.png',() => Get.to(()=> Paso2(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
-                    btnpasos(context, 'PASO #3', 'Planteamiento del Problema','plantear.png',() { }),
+                    btnpasos(context, 'PASO #3', 'Planteamiento del Problema','plantear.png',() => Get.to(()=> Paso3(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #4', 'Marco Teórico','marco.png',() { }),
                     SizedBox(height: 20,),
