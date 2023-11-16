@@ -1,7 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:trabajo/widgets/video_view.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 Widget Widget_titulo(String txt){
   return Row(
@@ -67,6 +70,23 @@ Widget Widget_url(String txt, String img){
         ),
       ],
     );
+}
+
+Widget video_show(String url){
+  return GestureDetector(
+    onTap: (){
+      Get.to(Video_View(url: url), transition: Transition.fade, duration: Duration(seconds: 1));
+    },
+    child: YoutubePlayer(
+      controller: YoutubePlayerController(
+        initialVideoId: url,
+        flags: const YoutubePlayerFlags(
+          autoPlay: false,
+          hideControls: true
+        )
+      )
+    ),
+  );
 }
 
 Widget Widget_herramienta_ayuda(){

@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:trabajo/widgets/contenido.dart';
 import 'package:trabajo/widgets/header.dart';
@@ -20,11 +19,12 @@ class cap1_Paso1 extends StatelessWidget {
                 height: screenHeight*0.86,
                 child: ListView(
                   children: [
+                    SizedBox(height: 10,),
                     Widget_titulo('SELECCION DE TEMA'),
                     SizedBox(height: 10,),
                     Widget_texto('Para esta actividad se hace necesario ver el video y buscar temas de su interés para dar ejemplo de temáticas, elijan un tema de su interés para investigar debe ser sencillo, que conozcas, de tu gusto, que creas que puede llevar a cabo y que esté a tu disponibilidad. Con base en el video, realiza un mapa conceptual sobre los pasos para hacer una investigación, selecciona un tema relacionado con tus futuros estudios universitarios o con tus intereses. Posteriormente, se te facilitará un tema como propuesta y con él, trabajarás entre todas las siguientes etapas de una investigación. A esta temática se le debe reducir, especificar, delimitar en tiempo y lugar.',),
                     SizedBox(height: 10,),
-                    Widget_url('https://www.youtube.com/watch?v=Wx5UhVHthVw', 'paso1.1.jpg'),
+                    video_show('Wx5UhVHthVw'),
                     SizedBox(height: 30,),
                     Widget_titulo('BUSQUEDA DE FUENTES'),
                     SizedBox(height: 10,),
@@ -36,7 +36,7 @@ class cap1_Paso1 extends StatelessWidget {
                     Widget_texto('Reglas básicas de citación y referencia en un estilo específico (APA, MLA, etc.).'),
                     Widget_texto('Solicita que practiquen la correcta citación de sus fuentes.'),
                     SizedBox(height: 10,),
-                    Widget_url('https://www.youtube.com/watch?v=Wx5UhVHthVw', 'paso1.1.jpg'),
+                    video_show('nQh7zBSA_2A'),
                     SizedBox(height: 30,),
                     Widget_herramienta_ayuda(),
                     SizedBox(height: 30,),
