@@ -28,7 +28,7 @@ class HeaderContainer extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Capitulos',
+                  'SECCIONES',
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 Icon(
