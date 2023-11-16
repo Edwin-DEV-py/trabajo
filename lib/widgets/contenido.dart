@@ -44,7 +44,7 @@ Widget Widget_texto(String txt){
   );
 }
 
-Widget Widget_url(String txt, String img){
+Widget Widget_url(String txt, String img, double tamano){
 
   _launchURL(String url) async {
   if (!await launchUrl(Uri.parse(url))) {
@@ -62,10 +62,9 @@ Widget Widget_url(String txt, String img){
             _launchURL(txt);
           },
           child: Image(
-            image: AssetImage('assets/miniaturas/$img'),
+            image: AssetImage('assets/$img'),
             fit: BoxFit.cover,
-            width: 350,
-            height: 200,
+            width: tamano,
           ),
         ),
       ],
@@ -90,6 +89,14 @@ Widget video_show(String url){
 }
 
 Widget Widget_herramienta_ayuda(){
+  _launchURL(String url) async {
+  if (!await launchUrl(Uri.parse(url))) {
+    throw 'No se pudo abrir la URL: $url';
+  }else{
+      await launchUrl(Uri.parse(url));
+    }
+  }
+
   return Column(
     children: [
       Row(
@@ -117,14 +124,8 @@ Widget Widget_herramienta_ayuda(){
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image(
-            image: AssetImage('assets/gt.png'),
-            width: 100,
-          ),
-          Image(
-            image: AssetImage('assets/bing.png'),
-            width: 100,
-          )
+          Widget_url('https://chat.openai.com/', 'gt.png', 100),
+          Widget_url('https://www.bing.com/new?cc=es', 'bing.png', 100),
         ],
       ),
       SizedBox(height: 10,),
@@ -165,10 +166,7 @@ Widget Widget_herramienta_ayuda(){
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image(
-            image: AssetImage('assets/gg.png'),
-            width: 100,
-          ),
+          Widget_url('https://www.google.com/', 'gg.png', 100)
         ],
       ),
     ]
