@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:trabajo/widgets/colores.dart';
 import 'package:trabajo/widgets/video_view.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -198,6 +199,52 @@ Widget Widget_herramienta_ayuda(){
       ),
     ]
     
+  );
+}
+
+Widget Widget_quiz(String url){
+
+  _launchURL(String url) async {
+  if (!await launchUrl(Uri.parse(url))) {
+    throw 'No se pudo abrir la URL: $url';
+  }else{
+      await launchUrl(Uri.parse(url));
+    }
+  }
+
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Container(
+        width: 250,
+        height: 160,
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset('assets/quizas.png', width: 100,)
+              ],
+            ),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: (){
+                _launchURL(url);
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Evalúa tus Conocimientos', style: TextStyle(
+                    fontSize: 18
+                  ),)
+                ],
+              ),
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryColor, fixedSize: Size(250,50)),
+            ),
+          ],
+        )
+      )
+    ],
   );
 }
 
