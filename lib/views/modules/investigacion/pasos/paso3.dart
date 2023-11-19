@@ -40,7 +40,7 @@ class Paso3 extends StatelessWidget {
                 SizedBox(height: 10,),
                 Widget_url_text('https://www.questionpro.com/blog/es/pregunta-de-investigacion'),
                 SizedBox(height: 10,),
-                //
+                Image(image: AssetImage('assets/pasos/paso3/img1.png'), height: 250,),
                 SizedBox(height: 10,),
                 Widget_texto('Utilizar lista de verbos compartida por la docente en documento de Word:'),
                 SizedBox(height: 10,),
@@ -56,7 +56,7 @@ class Paso3 extends StatelessWidget {
                 SizedBox(height: 10,),
                 Divider(thickness: 2,),
                 SizedBox(height: 10,),
-                Widget_quiz(''),
+                Widget_quiz('https://forms.gle/pqYxqcZxBfCRv7LW7'),
                 SizedBox(height: 30,),
               ],
             ),
