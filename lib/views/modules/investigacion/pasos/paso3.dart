@@ -50,6 +50,8 @@ class Paso3 extends StatelessWidget {
                 SizedBox(height: 10,),
                 Widget_Subtitulo('Objetivos Específicos (3-4):'),
                 Widget_texto('deben llevar una secuencia para cumplir con el objetivo general.'),
+                SizedBox(height: 10,),
+                Widget_url_text('https://concepto.de/objetivos-generales-y-especificos/'),
                 SizedBox(height: 20,),
                 Divider(thickness: 2,),
                 Widget_herramienta_ayuda(),

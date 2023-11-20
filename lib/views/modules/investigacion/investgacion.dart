@@ -7,6 +7,7 @@ import 'package:trabajo/views/modules/investigacion/pasos/paso2.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso3.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso4.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso5.dart';
+import 'package:trabajo/views/modules/investigacion/pasos/paso6.dart';
 import 'package:trabajo/widgets/btn-pasos.dart';
 import 'package:trabajo/widgets/colores.dart';
 import 'package:trabajo/widgets/header.dart';
@@ -51,7 +52,7 @@ class InvestigacionModulo extends StatelessWidget {
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #5', 'Metodología','meto.png',() => Get.to(()=> Paso5(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
-                    btnpasos(context, 'PASO #6', 'Análisis y Recolección de Datos','reco.png',() { }),
+                    btnpasos(context, 'PASO #6', 'Análisis y Recolección de Datos','reco.png',() => Get.to(()=> Paso6(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #7', 'Conclusiones','reco.png',() { }),
                     SizedBox(height: 20,),
