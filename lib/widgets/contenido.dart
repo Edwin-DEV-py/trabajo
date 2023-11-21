@@ -250,7 +250,7 @@ Widget Widget_quiz(String url){
     children: [
       Container(
         width: 250,
-        height: 160,
+        height: 180,
         child: Column(
           children: [
             Row(
@@ -270,10 +270,10 @@ Widget Widget_quiz(String url){
                   Text('Evalúa tus Conocimientos', style: TextStyle(
                     fontSize: 17,
                     color: Colors.white
-                  ),)
+                  ), textAlign: TextAlign.center,)
                 ],
               ),
-              style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryColor, fixedSize: Size(250,50)),
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryColor, fixedSize: Size(250,60)),
             ),
           ],
         )

@@ -15,8 +15,8 @@ class ProfesorPage extends StatefulWidget {
 
 class _ProfesorPageState extends State<ProfesorPage> {
 //datos d einicio de sesin quemados
-  final String email = 'prueba123@gmail.com';
-  final String password = 'prueba123';
+  final String email = 'Docente01';
+  final String password = 'DocenteMG17';
 //controladores de formulario
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();

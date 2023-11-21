@@ -54,7 +54,7 @@ class HomePage extends StatelessWidget {
                       ),
                       SizedBox(height: 15,),
                       Text(
-                        'MYRIAM GALÁN',
+                        'MYRIAM GALÁN MUÑOZ',
                         style: TextStyle(
                           fontSize: 18,
                           color: Color.fromARGB(255, 172, 172, 172)
@@ -71,7 +71,8 @@ class HomePage extends StatelessWidget {
                         child: Text(
                           'INICIAR',
                           style: TextStyle(
-                            fontSize: 20
+                            fontSize: 20,
+                            color: Colors.white
                           ),
                         ),
                         style: ElevatedButton.styleFrom(
