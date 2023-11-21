@@ -14,7 +14,7 @@ class ModulosPage extends StatelessWidget {
   Widget btnModulo(String txt, Color color, VoidCallback onPressed){
     return ElevatedButton(
       onPressed:onPressed, 
-      child: Text(txt),
+      child: Text(txt, style: TextStyle(color: Colors.white),),
       style: ElevatedButton.styleFrom(
         fixedSize: Size(250, 60),
         backgroundColor: color,

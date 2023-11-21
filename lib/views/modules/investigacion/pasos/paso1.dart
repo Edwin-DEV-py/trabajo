@@ -9,13 +9,14 @@ class cap1_Paso1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
+    double screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Column(
         children: [
           HeaderContainer3(txt: '1'),
           Container(
             child: Container(
-                width: 360,
+                width: screenwidth*0.90,
                 height: screenHeight*0.86,
                 child: ListView(
                   children: [

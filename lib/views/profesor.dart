@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:trabajo/views/home.dart';
+import 'package:trabajo/views/profe.dart';
 import 'package:trabajo/widgets/colores.dart';
 
 class ProfesorPage extends StatefulWidget {
@@ -12,6 +14,9 @@ class ProfesorPage extends StatefulWidget {
 }
 
 class _ProfesorPageState extends State<ProfesorPage> {
+//datos d einicio de sesin quemados
+  final String email = 'prueba123@gmail.com';
+  final String password = 'prueba123';
 //controladores de formulario
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();
@@ -19,6 +24,7 @@ class _ProfesorPageState extends State<ProfesorPage> {
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
+    double screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
@@ -45,7 +51,7 @@ class _ProfesorPageState extends State<ProfesorPage> {
               ),
             ),
             Container(
-              width: double.infinity,
+              width: screenwidth*0.95,
               height: screenHeight*0.6,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -74,9 +80,20 @@ class _ProfesorPageState extends State<ProfesorPage> {
                         SizedBox(height: 50,),
                         ElevatedButton(
                           onPressed: (){
-
+                            if( email == _usernameController.text && password == _passwordController.text ){
+                              Get.to(() => ProfeView(), transition: Transition.rightToLeft, duration: Duration(milliseconds:300));
+                              _usernameController.clear();
+                              _passwordController.clear();
+                            }else{
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Usuario o contraseña incorrectos'),
+                                  duration: Duration(seconds: 2),
+                                ),
+                              );
+                            }
                           }, 
-                          child: Text('INICIAR SESION', style: TextStyle(fontSize: 20),),
+                          child: Text('INICIAR SESION', style: TextStyle(fontSize: 20, color: Colors.white),),
                           style: ElevatedButton.styleFrom(
                             fixedSize: Size(250, 50),
                             backgroundColor: AppColors.primaryColor,

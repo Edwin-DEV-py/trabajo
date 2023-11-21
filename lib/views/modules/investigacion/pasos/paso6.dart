@@ -10,6 +10,7 @@ class Paso6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
+    double screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Column(
         children: [
@@ -17,7 +18,7 @@ class Paso6 extends StatelessWidget {
           HeaderContainer3(txt: '6'),
 //contenedor de conetido
           Container(
-            width: 360,
+            width: screenwidth*0.9,
             height: screenHeight*0.86,
             child: ListView(
               children: [

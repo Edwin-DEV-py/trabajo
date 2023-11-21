@@ -6,7 +6,7 @@ import 'package:trabajo/widgets/colores.dart';
 Widget btnpasos(BuildContext context,String txt,String txt2, String img, VoidCallback onPressed){
   return Container(
     width: 250,
-    height: 170,
+    height: 180,
     child: Column(
       children: [
         Row(
@@ -22,14 +22,16 @@ Widget btnpasos(BuildContext context,String txt,String txt2, String img, VoidCal
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(txt, style: TextStyle(
-                fontSize: 18
+                fontSize: 18,
+                color: Colors.white
               ),),
               Text(txt2,style: TextStyle(
-                fontSize: 15
+                fontSize: 15,
+                color: Colors.white
               ), textAlign: TextAlign.center,),
             ],
           ),
-          style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryColor, fixedSize: Size(250,60)),
+          style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryColor, fixedSize: Size(250,70)),
         ),
       ],
     )

@@ -19,6 +19,7 @@ class InvestigacionModulo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
+    double screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
@@ -28,7 +29,7 @@ class InvestigacionModulo extends StatelessWidget {
           HeaderContainer(),
 //contenedor de los modulos
           Container(
-            width: 250,
+            width: screenwidth*0.90,
             height: screenHeight * 0.88,
               child: ListView(
                   children: [
