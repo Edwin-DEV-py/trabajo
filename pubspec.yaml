@@ -19,6 +19,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^2.0.0
 
+
 flutter:
   uses-material-design: true
 
@@ -48,6 +49,7 @@ flutter:
     - assets/palabra.png
     - assets/pdf.png
     - assets/lista.png
+    - assets/gmail.png
     - assets/pasos/paso3/img1.png
     - assets/pasos/paso4/img1.png
     - assets/pasos/paso4/img2.png
@@ -65,3 +67,4 @@ flutter:
     - assets/pasos/pasos6/img5.png
     - assets/pasos/paso7/img1.png
     - assets/pasos/paso7/img2.png
+    - assets/icon/lista.png

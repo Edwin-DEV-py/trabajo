@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, non_constant_identifier_names, no_leading_underscores_for_local_identifiers, unused_element, sized_box_for_whitespace, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

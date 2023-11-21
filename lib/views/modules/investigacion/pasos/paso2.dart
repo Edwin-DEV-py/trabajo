@@ -1,3 +1,5 @@
+// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:trabajo/widgets/contenido.dart';
 import 'package:trabajo/widgets/header.dart';

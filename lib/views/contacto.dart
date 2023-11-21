@@ -1,29 +1,10 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, sized_box_for_whitespace
+// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:trabajo/views/contacto.dart';
-import 'package:trabajo/views/modules/investigacion/investgacion.dart';
-import 'package:trabajo/widgets/colores.dart';
 
-class ModulosPage extends StatelessWidget {
-  
-  const ModulosPage({super.key});
 
-//widget de boton de modulo
-
-  Widget btnModulo(String txt, Color color, VoidCallback onPressed){
-    return ElevatedButton(
-      onPressed:onPressed, 
-      child: Text(txt),
-      style: ElevatedButton.styleFrom(
-        fixedSize: Size(250, 60),
-        backgroundColor: color,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10.0)
-        )
-      ),
-    );
-  }
+class Contatco extends StatelessWidget {
+  const Contatco({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,14 +27,14 @@ class ModulosPage extends StatelessWidget {
                     children: [
                       IconButton(
                         onPressed: (){
-                          Navigator.pushNamed(context, '/login');
+                          Navigator.pop(context);
                         }, 
                         icon: Icon(
                           Icons.home_outlined,
                           size: 35,
                         )
                       ),
-                      Text('MODULOS', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+                      Text('CONTACTO', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
                       IconButton(
                         onPressed: (){
                           Navigator.pushNamed(context, '/login');
@@ -79,16 +60,27 @@ class ModulosPage extends StatelessWidget {
             height: screenHeight * 0.88,
             child: Scrollbar(
               child: ListView(
-                  children: [
-                    btnModulo('INVESTIGACION', AppColors.primaryColor, () => Get.to(()=>InvestigacionModulo(), transition: Transition.rightToLeft, duration: Duration(milliseconds: 300))),
-                    SizedBox(height: 30,),
-                    btnModulo('CONTACTO', AppColors.primaryColor, () => Get.to(()=>Contatco(), transition: Transition.rightToLeft, duration: Duration(milliseconds: 300)))
-                  ],
-                ),
-            )
+                children: [
+                  Image.asset('assets/profesor.png', height: 150,),
+                  SizedBox(height: 10,),
+                  Text('MYRIAM GALÁN MUÑOZ', textAlign: TextAlign.center,),
+                  SizedBox(height: 30,),
+                  Image.asset('assets/gmail.png', height: 120,),
+                  SizedBox(height: 10,),
+                  Text('mginvestigaaprende@gmail.com', textAlign: TextAlign.center,),
+                  Text('myriamsociales19@gmail.com', textAlign: TextAlign.center,),
+                  SizedBox(height: 30,),
+                  Image(
+                    image: AssetImage('assets/what.webp'),
+                    height: 150,
+                  ),
+                  Text('3143200660', textAlign: TextAlign.center,)
+                ],
+              ),
+            ),
           )
         ],
-      ),
+      )
     );
   }
 }

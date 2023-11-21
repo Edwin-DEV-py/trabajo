@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, avoid_unnecessary_containers, sized_box_for_whitespace
 import 'package:flutter/material.dart';
 import 'package:trabajo/widgets/contenido.dart';
 import 'package:trabajo/widgets/header.dart';
