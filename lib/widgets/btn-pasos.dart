@@ -59,7 +59,8 @@ Widget btnQuiz(BuildContext context, VoidCallback onPressed){
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('Evalúa tus Conocimientos', style: TextStyle(
-                fontSize: 18
+                fontSize: 18,
+                color: Colors.white
               ),)
             ],
           ),

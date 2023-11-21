@@ -268,7 +268,8 @@ Widget Widget_quiz(String url){
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text('Evalúa tus Conocimientos', style: TextStyle(
-                    fontSize: 18
+                    fontSize: 17,
+                    color: Colors.white
                   ),)
                 ],
               ),
