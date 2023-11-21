@@ -56,6 +56,7 @@ flutter:
     - assets/pdf.png
     - assets/lista.png
     - assets/gmail.png
+    - assets/conclu.png
     - assets/pasos/paso3/img1.png
     - assets/pasos/paso4/img1.png
     - assets/pasos/paso4/img2.png

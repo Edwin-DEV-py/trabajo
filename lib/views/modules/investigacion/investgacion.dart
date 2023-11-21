@@ -47,7 +47,7 @@ class InvestigacionModulo extends StatelessWidget {
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #6', 'Análisis y Recolección de Datos','reco.png',() => Get.to(()=> Paso6(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
-                    btnpasos(context, 'PASO #7', 'Conclusiones','reco.png',() => Get.to(()=> Paso7(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
+                    btnpasos(context, 'PASO #7', 'Conclusiones','conclu.png',() => Get.to(()=> Paso7(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #8', 'Díagnostico','diagnostico.png',() => Get.to(()=> Paso8(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
