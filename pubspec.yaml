@@ -47,6 +47,7 @@ flutter:
     - assets/problema.png
     - assets/palabra.png
     - assets/pdf.png
+    - assets/lista.png
     - assets/pasos/paso3/img1.png
     - assets/pasos/paso4/img1.png
     - assets/pasos/paso4/img2.png
@@ -62,3 +63,5 @@ flutter:
     - assets/pasos/pasos6/img3.png
     - assets/pasos/pasos6/img4.png
     - assets/pasos/pasos6/img5.png
+    - assets/pasos/paso7/img1.png
+    - assets/pasos/paso7/img2.png

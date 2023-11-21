@@ -8,8 +8,8 @@ import 'package:trabajo/views/modules/investigacion/pasos/paso3.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso4.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso5.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso6.dart';
+import 'package:trabajo/views/modules/investigacion/pasos/paso7.dart';
 import 'package:trabajo/widgets/btn-pasos.dart';
-import 'package:trabajo/widgets/colores.dart';
 import 'package:trabajo/widgets/header.dart';
 
 class InvestigacionModulo extends StatelessWidget {
@@ -31,16 +31,8 @@ class InvestigacionModulo extends StatelessWidget {
             height: screenHeight * 0.88,
               child: ListView(
                   children: [
-                    ElevatedButton(onPressed: (){
-
-                    }, child: Text('Como realizar un Trabajo de Grado?', textAlign: TextAlign.center, style: TextStyle(fontSize: 18),),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: Size(250, 80),
-                        backgroundColor: AppColors.primaryColor,
-                      ),
-                    ),
                     SizedBox(height: 20,),
-                    Title(color: Colors.black, child: Text('PASOS PARA REALIZAR UNA INVESTIGACION', textAlign: TextAlign.center, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)),
+                    Title(color: Colors.black, child: Text('REALIZAR UNA INVESTIGACION EN 8 PASOS', textAlign: TextAlign.center, style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),)),
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #1', 'Selección de Tema','problema.png',() => Get.to(()=> cap1_Paso1(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
@@ -54,9 +46,9 @@ class InvestigacionModulo extends StatelessWidget {
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #6', 'Análisis y Recolección de Datos','reco.png',() => Get.to(()=> Paso6(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
-                    btnpasos(context, 'PASO #7', 'Conclusiones','reco.png',() { }),
+                    btnpasos(context, 'PASO #7', 'Conclusiones','reco.png',() => Get.to(()=> Paso7(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
-                    btnpasos(context, 'PASO #8', 'Díagnostico','diagnostico.png',() { }),
+                    btnpasos(context, 'PASO #8', 'Díagnostico','diagnostico.png',() => Get.to(()=> Paso6(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
                   ],
                 ),
