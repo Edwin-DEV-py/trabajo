@@ -53,8 +53,14 @@ class ModulosPage extends StatelessWidget {
                         )
                       ),
                       Text('MODULOS', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
-                      Icon(Icons.exit_to_app_outlined,
-                        size: 35,
+                      IconButton(
+                        onPressed: (){
+                          Navigator.pushNamed(context, '/login');
+                        }, 
+                        icon: Icon(
+                          Icons.exit_to_app_outlined,
+                          size: 35,
+                        ),
                       ),
                     ],
                   ),

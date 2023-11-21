@@ -9,6 +9,7 @@ import 'package:trabajo/views/modules/investigacion/pasos/paso4.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso5.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso6.dart';
 import 'package:trabajo/views/modules/investigacion/pasos/paso7.dart';
+import 'package:trabajo/views/modules/investigacion/pasos/paso8.dart';
 import 'package:trabajo/widgets/btn-pasos.dart';
 import 'package:trabajo/widgets/header.dart';
 
@@ -31,7 +32,6 @@ class InvestigacionModulo extends StatelessWidget {
             height: screenHeight * 0.88,
               child: ListView(
                   children: [
-                    SizedBox(height: 20,),
                     Title(color: Colors.black, child: Text('REALIZAR UNA INVESTIGACION EN 8 PASOS', textAlign: TextAlign.center, style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),)),
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #1', 'Selección de Tema','problema.png',() => Get.to(()=> cap1_Paso1(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
@@ -48,7 +48,7 @@ class InvestigacionModulo extends StatelessWidget {
                     SizedBox(height: 20,),
                     btnpasos(context, 'PASO #7', 'Conclusiones','reco.png',() => Get.to(()=> Paso7(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
-                    btnpasos(context, 'PASO #8', 'Díagnostico','diagnostico.png',() => Get.to(()=> Paso6(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
+                    btnpasos(context, 'PASO #8', 'Díagnostico','diagnostico.png',() => Get.to(()=> Paso8(),transition: Transition.rightToLeft,duration: Duration(milliseconds: 300))),
                     SizedBox(height: 20,),
                   ],
                 ),
