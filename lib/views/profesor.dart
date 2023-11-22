@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:trabajo/views/home.dart';
 import 'package:trabajo/views/profe.dart';
 import 'package:trabajo/widgets/colores.dart';
@@ -79,11 +80,13 @@ class _ProfesorPageState extends State<ProfesorPage> {
                         ),
                         SizedBox(height: 50,),
                         ElevatedButton(
-                          onPressed: (){
+                          onPressed: () async{
                             if( email == _usernameController.text && password == _passwordController.text ){
                               Get.to(() => ProfeView(), transition: Transition.rightToLeft, duration: Duration(milliseconds:300));
                               _usernameController.clear();
                               _passwordController.clear();
+                              final prefs = await SharedPreferences.getInstance();
+                              prefs.setBool('pretest', true);
                             }else{
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
