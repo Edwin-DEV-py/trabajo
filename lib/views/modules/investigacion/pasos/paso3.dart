@@ -24,7 +24,7 @@ class Paso3 extends StatelessWidget {
               children: [
                 Widget_texto('Para las fases del paso numero 3 favor apoyarse en los videos, la imagen y el material que se les facilitó, así como el uso de chat gpt, Google Bing, Komo, you.com, Waldo, Perplejidad, Andi, Sí. Conocidos como motores de búsqueda de inteligencia artificial. Para realizar el planteamiento del problema, la pregunta problema, Justificación, el objetivo general y los objetivos específicos. Para la problemática específica que estamos trabajando. Envió documento Word'),
                 SizedBox(height: 10,),
-                Widget_url('https://docs.google.com/document/d/1kvyBJgXxJu6MKKtLfvoo3zCsxV7aiAzB/edit?usp=sharing&ouid=115717897741373098050&rtpof=true&sd=true', 'palabra.png', 100),
+                Widget_url('https://www.dropbox.com/scl/fi/3jv13wdmzjmdaeb5wnwqp/Formato-informe-paso-3.docx?rlkey=7nmlg6vcteq0xnj6nf126fxb5&dl=0', 'palabra.png', 100),
                 SizedBox(height: 10,),
                 Widget_titulo('PLANTEAMIENTO DEL PROBLEMA'),
                 SizedBox(height: 10,),
@@ -45,7 +45,7 @@ class Paso3 extends StatelessWidget {
                 SizedBox(height: 10,),
                 Widget_texto('Utilizar lista de verbos compartida por la docente en documento de Word:'),
                 SizedBox(height: 10,),
-                Widget_url('https://docs.google.com/document/d/1g_e7WTCWSchHhBz4uU7VtMzjyc-0VSQb/edit?usp=sharing&ouid=115717897741373098050&rtpof=true&sd=true', 'palabra.png', 100),
+                Widget_url('https://www.dropbox.com/scl/fi/3jv13wdmzjmdaeb5wnwqp/Formato-informe-paso-3.docx?rlkey=7nmlg6vcteq0xnj6nf126fxb5&dl=0', 'palabra.png', 100),
                 SizedBox(height: 10,),
                 Widget_titulo('OBJETIVO GENERAL'),
                 SizedBox(height: 10,),

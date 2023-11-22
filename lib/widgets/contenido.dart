@@ -1,4 +1,5 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, non_constant_identifier_names, no_leading_underscores_for_local_identifiers, unused_element, sized_box_for_whitespace, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, non_constant_identifier_names, no_leading_underscores_for_local_identifiers, unused_element, sized_box_for_whitespace, sort_child_properties_last, use_build_context_synchronously, avoid_print
+
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -6,6 +7,8 @@ import 'package:trabajo/widgets/colores.dart';
 import 'package:trabajo/widgets/video_view.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+
+
 
 Widget Widget_titulo(String txt){
   return Row(
@@ -73,6 +76,7 @@ Widget Widget_url(String txt, String img, double tamano){
       ],
     );
 }
+
 
 Widget Widget_url_activities(String txt){
 

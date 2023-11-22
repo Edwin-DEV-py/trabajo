@@ -24,15 +24,15 @@ class Paso8 extends StatelessWidget {
               children: [
                 Widget_titulo('PAUTAS PARA ELABORAR UN TRABAJO DE GRADO'),
                 SizedBox(height: 10,),
-                Widget_url('https://drive.google.com/file/d/14XRoNmv0YtFH1Lgnmhp2zbQ7PbBf5umZ/view?usp=sharing', 'pdf.png', 100),
+                Widget_url('https://www.dropbox.com/scl/fi/dqtikyhixekccbimw6jce/1.-Pautas_Elaboraci-n_Trabajos_de_Grado..pdf?rlkey=hmz3whwucwe5oz168yz0duh9h&dl=0', 'pdf.png', 100),
                 SizedBox(height: 30,),
                 Widget_titulo('NORMAS APA'),
                 SizedBox(height: 10,),
-                Widget_url('https://drive.google.com/file/d/1sinDQ7d96FLyUaO0qIXD6qst97hyeT7N/view?usp=sharing', 'pdf.png', 100),
+                Widget_url('https://www.dropbox.com/scl/fi/j4v97gfzfsauvn7s20yqs/Norma-APA-07-abreviada-DHFI-USTA.pdf?rlkey=rtdcokgvuky88ejlh2pkz6w72&dl=0', 'pdf.png', 100),
                 SizedBox(height: 30,),
                 Widget_titulo('FORMATO PARA INFORME DE TRABAJO FINAL'),
                 SizedBox(height: 10,),
-                Widget_url('https://docs.google.com/document/d/1gPrISuqljHBCf8ODVuBzOhwjlJemViRN/edit?usp=sharing&ouid=115717897741373098050&rtpof=true&sd=true', 'palabra.png', 100),
+                Widget_url('https://www.dropbox.com/scl/fi/b2murasyayug40ts40wcw/Formato_informe_final_trabajo_grado.docx?rlkey=1myjwh21g6g7ckh4nttcb1lq1&dl=0', 'palabra.png', 100),
                 SizedBox(height: 30,)
               ],
             ),

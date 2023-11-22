@@ -40,7 +40,7 @@ class Paso7 extends StatelessWidget {
                 SizedBox(height: 10,),
                 Widget_texto('A continuación, se presenta ejemplos de conclusiones bien redactadas de textos académicos identifiquen elementos clave, como la recapitulación de los puntos principales y la conexión con la hipótesis o la tesis.'),
                 SizedBox(height: 10,),
-                Widget_url('https://drive.google.com/file/d/1TvDDhF1vHfMVSlXeVKtXLfqa0qLg7IXW/view?usp=sharing', 'pdf.png', 100),
+                Widget_url('https://www.dropbox.com/scl/fi/lym88l58jmh08jlcv2l7d/17_Como_elaborar_una_conclusion.pdf?rlkey=rd1ctot9e8zb36um7gvxgraml&dl=0', 'pdf.png', 100),
                 SizedBox(height: 30,),
                 Widget_titulo('ACTIVIDAD 2'),
                 SizedBox(height: 10,),
