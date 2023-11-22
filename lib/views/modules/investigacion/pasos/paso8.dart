@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:trabajo/widgets/colores.dart';
 import 'package:trabajo/widgets/contenido.dart';
 import 'package:trabajo/widgets/header.dart';
 
@@ -33,6 +34,8 @@ class Paso8 extends StatelessWidget {
                 Widget_titulo('FORMATO PARA INFORME DE TRABAJO FINAL'),
                 SizedBox(height: 10,),
                 Widget_url('https://www.dropbox.com/scl/fi/b2murasyayug40ts40wcw/Formato_informe_final_trabajo_grado.docx?rlkey=1myjwh21g6g7ckh4nttcb1lq1&dl=0', 'palabra.png', 100),
+                SizedBox(height: 30,),
+                btnModulo2_url('PRUEBA POSTETST', AppColors.primaryColor, 'assets/prueba.png', 'https://forms.gle/djGH13t9bBFz44rj7'),
                 SizedBox(height: 30,)
               ],
             ),

@@ -61,7 +61,7 @@ class Paso6 extends StatelessWidget {
                 video_show('jFL585q3_Ao'),
                 SizedBox(height: 20,),
                 Divider(thickness: 2,),
-                Widget_url_activities('https://forms.gle/nc9EQ37xziJcwWkJ8'),
+                Widget_url_activities('https://forms.gle/Csi4F3QA4fxRYh9B6'),
                 SizedBox(height: 30,),
                 Divider(thickness: 2,),
                 Widget_herramienta_ayuda(),

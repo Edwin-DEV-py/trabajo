@@ -45,7 +45,7 @@ class Paso3 extends StatelessWidget {
                 SizedBox(height: 10,),
                 Widget_texto('Utilizar lista de verbos compartida por la docente en documento de Word:'),
                 SizedBox(height: 10,),
-                Widget_url('https://www.dropbox.com/scl/fi/3jv13wdmzjmdaeb5wnwqp/Formato-informe-paso-3.docx?rlkey=7nmlg6vcteq0xnj6nf126fxb5&dl=0', 'palabra.png', 100),
+                Widget_url('https://www.dropbox.com/scl/fi/dzjkesuhu1wyl3i9mtyze/LISTADO-DE-VERBOS.doc?rlkey=ljke4z06zimtbkew1hei0rxpl&dl=0', 'palabra.png', 100),
                 SizedBox(height: 10,),
                 Widget_titulo('OBJETIVO GENERAL'),
                 SizedBox(height: 10,),

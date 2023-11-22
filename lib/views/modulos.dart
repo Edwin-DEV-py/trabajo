@@ -1,9 +1,11 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, sized_box_for_whitespace, non_constant_identifier_names, use_build_context_synchronously, unrelated_type_equality_checks
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:trabajo/views/contacto.dart';
 import 'package:trabajo/views/modules/investigacion/investgacion.dart';
 import 'package:trabajo/widgets/colores.dart';
+import 'package:trabajo/widgets/contenido.dart';
 
 class ModulosPage extends StatelessWidget {
   
@@ -24,6 +26,34 @@ class ModulosPage extends StatelessWidget {
       ),
     );
   }
+
+  Widget btnModulo_shared(String txt, Color color, VoidCallback onPressed, BuildContext context){
+    return ElevatedButton(
+      onPressed:() async{
+        final prefs = await SharedPreferences.getInstance();
+        final acpt = prefs.getBool('pretest');
+        if(acpt==true){
+          Get.to(()=>InvestigacionModulo(), transition: Transition.rightToLeft, duration: Duration(milliseconds: 300));
+        }else{
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('No has hecho el pretest'),
+              duration: Duration(seconds: 2),
+            ),
+          );
+        }
+      }, 
+      child: Text(txt, style: TextStyle(color: Colors.white),),
+      style: ElevatedButton.styleFrom(
+        fixedSize: Size(250, 60),
+        backgroundColor: color,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.0)
+        )
+      ),
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -77,16 +107,27 @@ class ModulosPage extends StatelessWidget {
           Container(
             width: 250,
             height: screenHeight * 0.88,
-            child: Scrollbar(
-              child: ListView(
+            child: ListView(
                   children: [
-                    btnModulo('INVESTIGACION', AppColors.primaryColor, () => Get.to(()=>InvestigacionModulo(), transition: Transition.rightToLeft, duration: Duration(milliseconds: 300))),
+                    Text('No podrás acceder al contenido del módulo de investigación sin haber completado previamente la prueba pretest.', textAlign: TextAlign.center,),
+                    SizedBox(height: 10,),
+                    btnModulo2_url_shared_preferences('PRUEBA PRETEST', AppColors.primaryColor,'assets/prueba.png', 'https://forms.gle/WKC6fXDuBJqY68EA7'),
                     SizedBox(height: 30,),
-                    btnModulo('CONTACTO', AppColors.primaryColor, () => Get.to(()=>Contatco(), transition: Transition.rightToLeft, duration: Duration(milliseconds: 300)))
+                    Text('PRESIONA ESTE BOTON PARA ACCEDER A LOS PASOS DE INVESTIGACION', textAlign: TextAlign.center,),
+                    SizedBox(height: 10,),
+                    btnModulo_shared('INVESTIGACION', AppColors.primaryColor, () => Get.to(()=>InvestigacionModulo(), transition: Transition.rightToLeft, duration: Duration(milliseconds: 300)),context),
+                    SizedBox(height: 30,),
+                    video_show('Wx5UhVHthVw'),
+                    SizedBox(height: 30,),
+                    Image(image: AssetImage('assets/imgcompe.jpg'),height: 150,),
+                    SizedBox(height: 30,),
+                    btnModulo2_url('JUEGO DE PREGUNTAS', AppColors.primaryColor,'assets/rompecabezas.png', 'https://www.cerebriti.com/juegos-de-ciencias/preguntas-de-investigacion'),
+                    SizedBox(height: 30,),
+                    btnModulo2('CONTACTO', AppColors.primaryColor, () => Get.to(()=>Contatco(), transition: Transition.leftToRight, duration: Duration(milliseconds: 300)),'assets/comunicar.png'),
+                    SizedBox(height: 30,),
                   ],
                 ),
             )
-          )
         ],
       ),
     );

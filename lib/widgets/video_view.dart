@@ -55,7 +55,7 @@ class _Video_ViewState extends State<Video_View> {
               onPressed: (){
                 Get.back();
               }, 
-              child: Text('Cerrar video'),
+              child: Text('Cerrar video', style: TextStyle(color: Colors.white),),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.primaryColor
               ),

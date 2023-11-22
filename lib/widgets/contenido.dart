@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:trabajo/widgets/colores.dart';
 import 'package:trabajo/widgets/video_view.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -285,5 +286,90 @@ Widget Widget_quiz(String url){
     ],
   );
 }
+
+Widget btnModulo2_url(String txt, Color color, String img, String url){
+    _launchURL(String url) async {
+      if (!await launchUrl(Uri.parse(url))) {
+        throw 'No se pudo abrir la URL: $url';
+      }else{
+          await launchUrl(Uri.parse(url));
+        }
+    }
+
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image(image: AssetImage(img), height: 150,),
+        SizedBox(height: 10,),
+        ElevatedButton(
+          onPressed:(){
+            _launchURL(url);
+          }, 
+          child: Text(txt, style: TextStyle(color: Colors.white),),
+          style: ElevatedButton.styleFrom(
+            fixedSize: Size(250, 60),
+            backgroundColor: color,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0)
+            )
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget btnModulo2_url_shared_preferences(String txt, Color color, String img, String url){
+    _launchURL(String url) async {
+      if (!await launchUrl(Uri.parse(url))) {
+        throw 'No se pudo abrir la URL: $url';
+      }else{
+          await launchUrl(Uri.parse(url));
+        }
+    }
+
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image(image: AssetImage(img), height: 150,),
+        SizedBox(height: 10,),
+        ElevatedButton(
+          onPressed:() async{
+            _launchURL(url);
+            final prefs = await SharedPreferences.getInstance();
+            prefs.setBool('pretest', true);
+          }, 
+          child: Text(txt, style: TextStyle(color: Colors.white),),
+          style: ElevatedButton.styleFrom(
+            fixedSize: Size(250, 60),
+            backgroundColor: color,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0)
+            )
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget btnModulo2(String txt, Color color, VoidCallback onPressed, String img){
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image(image: AssetImage(img), height: 150,),
+        SizedBox(height: 10,),
+        ElevatedButton(
+          onPressed:onPressed, 
+          child: Text(txt, style: TextStyle(color: Colors.white),),
+          style: ElevatedButton.styleFrom(
+            fixedSize: Size(250, 60),
+            backgroundColor: color,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0)
+            )
+          ),
+        )
+      ],
+    );
+  }
 
 
