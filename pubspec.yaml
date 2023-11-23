@@ -33,7 +33,7 @@ flutter:
   assets:
     - assets/graduado.png
     - assets/profesor.png
-    - assets/home.jpg
+    - assets/home.jpeg
     - assets/idea.png
     - assets/marco.png
     - assets/meto.png

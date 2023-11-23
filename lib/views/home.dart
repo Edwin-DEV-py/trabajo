@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
               color:Colors.black
             ),
             child: Image(
-              image: AssetImage('assets/home.jpg'),
+              image: AssetImage('assets/home.jpeg'),
               fit: BoxFit.cover,
             ),
           )
